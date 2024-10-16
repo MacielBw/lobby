@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maciel Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: white;
+        }
+
+        header {
+            background-color: #1C1C1C;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00A3FF;
+        }
+
+        .main-banner {
+            background: url('https://media.discordapp.net/attachments/1255701033057910875/1295913891976581150/9cf5b64d6cd2963ef96eabb4b2c1cbe6.jpg?ex=6710615c&is=670f0fdc&hm=f865440befde910325d0cfd46f14d19977eedb9e8b195b3494a4b26f784930ee&=&format=webp&width=1215&height=674') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .main-banner h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4rem;
+        }
+
+        .main-banner p {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: #ccc;
+        }
+
+        .cta-buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center; /* Alinhando ao centro */
+        }
+
+        .cta-buttons a {
+            background-color: #00A3FF;
+            padding: 15px 30px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-buttons a:hover {
+            background-color: #0056b3;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icons a img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons a img:hover {
+            transform: scale(1.2);
+        }
+
+        .info-section {
+            padding: 50px 20px;
+            background-color: #1C1C1C;
+        }
+
+        .info-section h2 {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .info-item {
+            background-color: #282828;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .info-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .info-item h3 {
+            margin-top: 15px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .info-item p {
+            color: #ccc;
+            margin-top: 10px;
+        }
+
+        .info-item:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #000;
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #00A3FF;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 1024px) {
+            .info-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="" alt="">
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="equipe.html">Equipe</a>
+            <a href="https://discord.gg/mystery-shop-recomeco-1173377603130904696">Suporte</a>
+        </nav>
+    </header>
+
+    <section class="main-banner">
+        <h1>Bem-vindo ao Hub</h1>
+        <p>Fique por dentro das atualizações e novidades da nossa comunidade!!.</p>
+        <div class="cta-buttons">
+            <a href="https://discord.gg/mystery-shop-recomeco-1173377603130904696">Entre para o Clan</a>
+        </div>
+
+        <!-- Seção de ícones sociais -->
+        <div class="social-icons">
+            <a href="https://discord.gg/mystery-shop-recomeco-1173377603130904696" target="_blank">
+                <img src="https://cdn.discordapp.com/attachments/1186379146079772672/1295925617031774248/7QBpkbA5_400x400.jpg?ex=67106c48&is=670f1ac8&hm=b9e9720da0b2f753a64d8f4c6891c4aa6ce75e85411edf313eef68d470fefa59&" alt="Discord">
+            </a>
+            <a href="https://www.tiktok.com/@maciel.bw" target="_blank">
+                <img src="https://cdn.discordapp.com/attachments/1186379146079772672/1295925168505356348/tiktok-icon2.png?ex=67106bdd&is=670f1a5d&hm=a7820db823902b46f7ac30cb461152775cce15b7ead6ae3d6a5ff2726048b597&" alt="TikTok">
+            </a>
+            <a href="https://www.instagram.com/maciel.xyz/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <h2>Novidades e Atualizações</h2>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <img src="https://media.discordapp.net/attachments/1266867072651100252/1295890398618849360/postar.png?ex=67104b7b&is=670ef9fb&hm=557f753339f9b01850099941a9989cde4e9996fc525134915f0b874dfff130f5&=&format=webp&quality=lossless" alt="Atualização 1">
+                <h3>TAG PARTNER</h3>
+                <p>Estamos em busca da parceria oficial com o MushMC! Esse é um grande passo para a nossa comunidade e conteúdo no Minecraft. Com a parceria, poderemos trazer ainda mais benefícios e eventos exclusivos para todos. Vamos juntos nessa jornada!</p>
+            </div>
+
+            <div class="info-item">
+                <img src="https://media.discordapp.net/attachments/1266867072651100252/1295896066625110066/atualizacao_site.png?ex=671050c2&is=670eff42&hm=aac393b48bf81fbbc649b57090bcbc15ef8da49fc3b62ae621a3dc9900e96e85&=&format=webp&quality=lossless" alt="Atualização 2">
+                <h3>ATT DISCORD</h3>
+                <p>Nosso servidor está sempre evoluindo com atualizações regulares para trazer novas funcionalidades, corrigir bugs e melhorar a experiência do servidor. Fique ligado nas novidades e aproveite o melhor do Discord com a gente!</p>
+            </div>
+
+            <div class="info-item">
+                <img src="https://media.discordapp.net/attachments/1266867072651100252/1295898517080117308/staff.png?ex=6710530b&is=670f018b&hm=fa66ee9c7d103e15928cdf084906b0295fd34ac6982d9282049a42a0db1a421e&=&format=webp&quality=lossless" alt="Atualização 3">
+                <h3>NOVA STAFF</h3>
+                <p>Estamos recrutando novos membros para nossa equipe de staff. Se você é apaixonado por Minecraft, tem habilidades de moderação e quer ajudar a nossa comunidade a crescer, essa é sua chance! Entre em contato para mais informações e faça parte do nosso time!.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 João Paulo - Todos os direitos reservados</p>
+        <p><a href="#">Termos de Serviço</a> | <a href="#">Política de Privacidade</a></p>
+    </footer>
+
+</body>
+</html>

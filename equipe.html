@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipe do Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: white;
+        }
+
+        header {
+            background-color: #1C1C1C;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00A3FF;
+        }
+
+        /* Estilo da seção da equipe */
+        .team-section {
+            padding: 50px 20px;
+            background-color: #1C1C1C;
+            text-align: center;
+        }
+
+        .team-section h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .team-member {
+            background-color: #282828;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px; /* Definindo bordas levemente arredondadas para manter a forma quadrada */
+            margin-bottom: 15px;
+        }
+
+        .team-member h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .team-member p {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #000;
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #00A3FF;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 1024px) {
+            .team-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="" alt="">
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="equipe.html">Equipe</a>
+        </nav>
+    </header>
+
+    <section class="team-section">
+        <h1>Equipe STAFF</h1>
+
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="https://media.discordapp.net/attachments/1255701033057910875/1295917722064125983/macielxyz.png?ex=671064ed&is=670f136d&hm=aa811ac47f72d11007ffd8252c005f6b87ba2c0229ac37a486b0280eb5087a85&=&format=webp&quality=lossless" alt="Membro 1">
+                <h3>Macielxyz</h3>
+                <p>Função: Dono</p>
+            </div>
+
+            <div class="team-member">
+                <img src="https://cdn.discordapp.com/attachments/1255701033057910875/1295918707469451377/STARRY.png?ex=671065d8&is=670f1458&hm=7fe235dc873f78af1b8267eb97a6fa4e0cbb621a086b72380cc9469b4812771b&" alt="Membro 2">
+                <h3>St4rrym00nyy</h3>
+                <p>Função: Criadora de Conteúdo / Diretora</p>
+            </div>
+
+            <div class="team-member">
+                <img src="https://cdn.discordapp.com/attachments/1186379146079772672/1295917386180067388/incyz.png?ex=6710649d&is=670f131d&hm=2ddb1f25f609861963756e9a9a82bf01ef6a5fc8ae65c80694dd107146ad2ab6&" alt="Membro 3">
+                <h3>Incyz</h3>
+                <p>Função: Administrador</p>
+            </div>
+
+            <div class="team-member">
+                <img src="https://cdn.discordapp.com/attachments/1174371902047932476/1295918004558757908/dylon.png?ex=67106531&is=670f13b1&hm=07794910cd99a27ed8907e9a163fac27f0e917732d1afb7f433cf5c7c7c65f7d&" alt="Membro 4">
+                <h3>Dylon</h3>
+                <p>Função: Criador de conteúdo</p>
+            </div>
+
+            <div class="team-member">
+                <img src="https://cdn.discordapp.com/attachments/1180659085306249296/1295917460725436426/fd0a7888a1165a085fabf22a1ac3fd41.jpg?ex=671064af&is=670f132f&hm=adb4821b7784dea9dd15d8bc2c13569129a1c8a1857bc764e838edb26c619993&" alt="Membro 5">
+                <h3>VAGA ABERTA!!!</h3>
+                <p>Função: ?</p>
+            </div>
+
+            <div class="team-member">
+                <img src="https://cdn.discordapp.com/attachments/1180659085306249296/1295917460725436426/fd0a7888a1165a085fabf22a1ac3fd41.jpg?ex=671064af&is=670f132f&hm=adb4821b7784dea9dd15d8bc2c13569129a1c8a1857bc764e838edb26c619993&" alt="Membro 6">
+                <h3>VAGA ABERTA!!!</h3>
+                <p>Função: ?</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 João Paulo. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
